@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "types": ["node"],
     "outDir": "./dist",
-    "rootDir": ".",
+    "rootDir": "./src",
     "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "moduleDetection": "force",
+    "noImplicitAny": false,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["src"],
+  "exclude": ["frontend", "node_modules", "dist"]
 }
