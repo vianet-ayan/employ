@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/main" }],
+  "functions": { "api/main.js": { "maxDuration": 60 } }
+}
